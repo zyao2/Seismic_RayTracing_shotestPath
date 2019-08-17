@@ -1,5 +1,5 @@
 function [Model]=FW(m,n,s_i,s_j,N2In,In2N,zpos,xpos,Model) 
-%Q=zeros(m,n);
+global zorder xorder
 A=zeros(m*n,1);        
 %input source location 
 Model(s_i,s_j).time=0; 
@@ -19,7 +19,7 @@ while counter_P<(m*n)
     z0=zpos(node_i);
     %Determining all node sets V connected to the node where the 
     %minial time node is located
-    [LV,V_i,V_j]=Fw_star(node_i,node_j,m,n,4,4); 
+    [LV,V_i,V_j]=Fw_star(node_i,node_j,m,n,zorder,xorder); 
     for ii=1:LV 
         i=V_i(ii); 
         j=V_j(ii);
