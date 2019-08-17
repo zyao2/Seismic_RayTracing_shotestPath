@@ -1,3 +1,5 @@
+global zorder xorder
+xorder=4; zorder=4;
 Length=20; n=40;%j -- x
 Width=18;m=48; %i  --  z
 src_x = 1.0;  src_z = 2.0;         % Shot 
