@@ -29,7 +29,6 @@ for i=1:m
           Model(i,j).before_i=-1; 
           Model(i,j).before_j=-1; 
           Model(i,j).time=inf; 
-          %Model(i,j).uptime=NaN; 
     end 
 end 
 In2N=zeros(m,n);
