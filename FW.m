@@ -6,10 +6,6 @@ Model(s_i,s_j).time=0;
 node_i=s_i; 
 node_j=s_j; 
 Frozen(node_i,node_j)=1;
-%find number of node 
-
-Heap = zeros(3, m*n);
-heapCount = 0;
 x0=xpos(node_j);
 z0=zpos(node_i);
 t0=Model(node_i,node_j).time;
